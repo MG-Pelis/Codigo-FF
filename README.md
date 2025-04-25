@@ -2,6 +2,12 @@
 
 Este repositorio contiene el código fuente de la web **Código FF**. Puedes comprobarlo tú mismo: no hay nada raro detrás, todo el funcionamiento es transparente y visible.
 
+## ¿Autor?
+
+Este proyecto fue creado **desde cero** por mí (Brayan). Todo el código lo desarrollé personalmente, sin plantillas ni generadores automáticos.
+
+Puedes usarlo, modificarlo o adaptarlo **libremente** y sin riesgos. No hay scripts ocultos, ni trackers, ni cosas sospechosas. Solo lógica limpia y funcional.
+
 ## ¿Cómo funciona?
 
 - Al autenticarte con Google, la app obtiene tu **nombre**, **correo** y **foto de perfil**.
