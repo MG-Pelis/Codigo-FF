@@ -6,13 +6,14 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/11.6.0/firebase
 
 // Configuración de Firebase para la aplicación web
 const firebaseConfig = {
-    apiKey: "AIzaSyBsoCt0_XwYFEN_rNdB9XZlXDu0ZS_RYdQ",
-    authDomain: "codigo-ff.firebaseapp.com",
-    projectId: "codigo-ff",
-    storageBucket: "codigo-ff.firebasestorage.app",
-    messagingSenderId: "827663248408",
-    appId: "1:827663248408:web:7ef57d884658459745e76d",
-    measurementId: "G-GHVMSP3KV6"
+    apiKey: "AQUÍ_VA_TU_API_KEY",
+    authDomain: "TU_DOMINIO.firebaseapp.com",
+    databaseURL: "https://TU_DOMINIO.firebaseio.com",
+    projectId: "TU_ID_DEL_PROYECTO",
+    storageBucket: "TU_BUCKET.appspot.com",
+    messagingSenderId: "TU_SENDER_ID",
+    appId: "TU_APP_ID",
+    measurementId: "TU_MEASUREMENT_ID"
 };
 
 // Inicializar Firebase
