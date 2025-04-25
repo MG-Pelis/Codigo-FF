@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 4 - Código FF</title>
+    <link rel="stylesheet" href="css/nivel-4.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1 id="nivel-titulo">Nivel 4 – Final</h1>
+        <p id="nivel-descripcion">Solo los verdaderos jugadores completan esto. Si pasas, desbloqueas el código oculto final.</p>
+    </header>
+    <main>
+        <!-- Indicador de intentos restantes -->
+        <p id="intentos-restantes">Intentos restantes: <span id="intentos">0</span></p>
+        <!-- Contenedor dinámico para mostrar el desafío actual -->
+        <section id="desafio-actual">
+            <h2 id="desafio-titulo"></h2>
+            <!-- Descripción del desafío -->
+            <p id="desafio-descripcion"></p>
+            <div id="barra-tiempo-container" class="ocul">
+                <div id="barra-tiempo"></div>
+            </div>
+            <div id="desafio-contenido">
+                <!-- El contenido del desafío se cargará dinámicamente aquí -->
+            </div>
+        </section>
+
+        <!-- Botón para iniciar el nivel -->
+        <div id="boton-inicio-container">
+            <button id="boton-inicio">Iniciar Nivel</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 MG Studios. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Conexión con los archivos JavaScript -->
+    <script type="module" src="js/authUtils.js"></script>
+    <script type="module" src="js/codigoUnico.js"></script>
+    <script type="module" src="js/desafio1.js"></script>
+    <script type="module" src="js/desafio2.js"></script>
+    <script type="module" src="js/desafio3.js"></script>
+    <script type="module" src="js/desafio4.js"></script>
+    <script type="module" src="js/nivel-4.js"></script>
+</body>
+</html>

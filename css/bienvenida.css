@@ -1,0 +1,180 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* App bar */
+.app-bar {
+    background-color: #ff4500;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.app-bar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+    background-color: #ff4500;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.welcome-section h2 {
+    font-size: 2rem;
+    color: #ff4500;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+}
+
+/* Sección de progreso */
+.progress-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.progress-section h2 {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.progress-section p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Botón "Continuar" */
+.btn-primary {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-primary:active {
+    transform: scale(1);
+}
+
+/* Botón flotante de chat */
+.chat-button {
+    position: fixed;
+    bottom: 80px; /* Subido para no interferir con el footer */
+    right: 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Animación */
+}
+
+.chat-button:hover {
+    background-color: #e03e00;
+    transform: scale(1.1);
+}
+
+.chat-button ion-icon {
+    font-size: 1.5rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+/* Contador regresivo */
+.countdown-timer {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4500; /* Naranja */
+    text-align: center;
+}

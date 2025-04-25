@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas del desafío - Código FF</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/reglas.css">
+</head>
+<body>
+    <header>
+        <h1>Normas del Desafío</h1>
+    </header>
+    <main>
+        <p class="intro-text">¡Bienvenido al reto más emocionante! Asegúrate de leer las reglas para tener claro cómo funciona todo. Solo los más decididos llegarán al final.</p>
+
+        <section class="rules-box">
+            <h2>📜 Normas del juego:</h2>
+            <ul>
+                <li>🔐 Debes iniciar sesión con tu cuenta de Google para participar. Esto garantiza que no haya trampas ni bots.</li>
+                <li>🧠 El reto está dividido en <strong>4 niveles</strong>, cada uno con <strong>4 desafíos</strong> que van desde acertijos hasta minijuegos.</li>
+                <li>🎲 Algunos acertijos son aleatorios, mientras que otros están inspirados en el universo de <strong>Free Fire</strong>.</li>
+                <li>🏁 Al completar todos los niveles correctamente, recibirás un <strong>código único</strong> generado por el sistema.</li>
+                <li>📲 Ese código deberás enviarlo por WhatsApp al número que aparecerá al final del reto. ¡Solo así podrás reclamar tu premio!</li>
+                <li>✅ Si el código es correcto, recibirás los datos de la cuenta. ¡Así de fácil!</li>
+                <li>🔄 Tienes <strong>10 intentos por día</strong>, que se recargan automáticamente todos los días a las 7:00 a.m.</li>
+                <li>⏳ El código se actualiza automáticamente cada mañana y se sube a la base de datos del juego.</li>
+                <li>💾 Tu progreso se guarda automáticamente con tu cuenta de Google. ¡No tienes que empezar desde cero si fallas!</li>
+                <li>🥇 Solo hay un ganador: <strong>el primero</strong> en resolver todos los desafíos y enviar el código válido.</li>
+                <li>📂 Para que veas que esto es completamente transparente, el código fuente de esta web es público en GitHub.</li>
+                <li>⚠️ Una vez que generes el código, es único y solo lo podrás reclamar tú. Si eres el primero en conseguirlo, no te preocupes, ¡nadie más podrá sobreescribirlo! Sin embargo, este código es válido solo por 24 horas. Si no lo reclamas en ese tiempo, perderás la oportunidad de obtenerlo y alguien más podrá generar uno nuevo.</li>
+            </ul>            
+        </section>
+
+        <section class="level-4-rules">
+            <h2>📊 Desafío Nivel 4, Desafío 4:</h2>
+            <p>Este desafío pondrá a prueba tu memoria y tus habilidades matemáticas. Así es como funciona:</p>
+            <ul>
+                <li>Al comenzar este desafío, se te mostrará el nombre completo de un arma o personaje de Free Fire durante <strong>1 segundo</strong>.</li>
+                <li>Después de que se haya mostrado el nombre, deberás asignar un número a cada letra basándote en su posición en el alfabeto. Por ejemplo: <strong>A = 1, B = 2, C = 3, etc.</strong></li>
+                <li>Tendrás <strong>5 segundos</strong> para asignar el número correspondiente a cada letra.</li>
+                <li>Una vez asignados los números, tendrás <strong>15 segundos</strong> para sumar todos los valores numéricos de las letras del nombre mostrado.</li>
+                <li>Finalmente, se te preguntará: ¿Cuál fue el nombre del arma o personaje que se mostró? Tienes <strong>10 segundos</strong> para escribir tu respuesta.</li>
+                <li>¡Este desafío será un reto, pero si sigues las instrucciones con atención, lo lograrás!</li>
+            </ul>
+        </section>
+        
+
+        <div class="center-button">
+            <button id="btn-google">Aceptar y continuar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MG Studios. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/auth.js" type="module"></script>
+</body>
+</html>

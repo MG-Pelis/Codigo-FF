@@ -1,0 +1,196 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Texto introductorio */
+.intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+    color: #555;
+}
+
+/* Caja de reglas */
+.rules-box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 90%;
+    margin: 20px auto;
+    color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rules-box h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.rules-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rules-box li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.rules-box li::before {
+    content: "•";
+    color: #007BFF;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Botón central */
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Sección Explicación Nivel 4 Desafío 4 */
+.level-4-rules {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 90%;
+    margin: 30px auto;
+    color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.level-4-rules h2 {
+    color: #FF5733; /* Color distintivo para el desafío 4 */
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.level-4-rules ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.level-4-rules li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.level-4-rules li::before {
+    content: "📍"; /* Icono distintivo para los pasos del desafío */
+    color: #FF5733;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+.level-4-rules p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.level-4-rules p strong {
+    color: #FF5733;
+}
+
+/* Adaptaciones para móviles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .rules-box h2 {
+        font-size: 1.3rem;
+    }
+
+    .rules-box li {
+        font-size: 0.9rem;
+    }
+
+    .level-4-rules h2 {
+        font-size: 1.4rem;
+    }
+
+    .level-4-rules li {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

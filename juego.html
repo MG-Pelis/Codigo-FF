@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Juego - Código FF</title>
+    <link rel="stylesheet" href="css/bienvenida.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/usuarios.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="js/bienvenida.js"></script>
+    <script type="module" src="js/chat.js"></script>
+    <script type="module" src="js/usuarios.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header class="app-bar">
+        <h1 id="user-name">Cargando...</h1>
+        <div class="profile" id="profile-menu">
+            <img id="profile-pic" src="" alt="Foto de perfil">
+        </div>
+    </header>
+    <main>
+        <section class="welcome-section" id="welcome-section">
+            <h2>¡Bienvenido!</h2>
+            <!-- Mensaje actualizado con el número de usuarios registrados dentro del texto -->
+            <p id="welcome-message">Gracias por aceptar el reto. ¡Ya hay <span id="num-usuarios">0</span> participantes registrados!</p>
+        </section>
+        <section class="progress-section">
+            <h2>Tu progreso</h2>
+            <p>Nivel: <span id="nivel">-</span></p>
+            <p>Desafío: <span id="desafio">-</span></p>
+            <p>Intentos restantes: <span id="intentos">-</span></p>
+        </section>
+        <button id="btn-continuar" class="btn-primary">Continuar</button>
+        <div id="countdown" class="countdown-timer">
+            <!-- Aquí se mostrará el contador regresivo -->
+        </div>
+    </main>
+
+    <!-- Chat Global -->
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <h3>Chat Global</h3>
+            <ion-icon name="close-outline" id="close-chat"></ion-icon>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Aquí se mostrarán los mensajes -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+            <ion-icon name="send-outline" id="send-message"></ion-icon>
+        </div>
+    </div>
+
+    <button class="chat-button">
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+    </button>
+    <footer>
+        <p>&copy; 2025 MG Studios. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Menú desplegable -->
+    <div class="dropdown-menu" id="dropdown-menu">
+        <ul>
+            <li id="btn-cambiar-nombre">Cambiar nombre</li>
+            <li id="btn-cerrar-sesion">Cerrar sesión</li>
+            <li id="btn-eliminar-cuenta">Eliminar cuenta</li>
+        </ul>
+    </div>
+</body>
+</html>

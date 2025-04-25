@@ -1,0 +1,135 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Contenedor del desafío */
+#desafio-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#desafio-titulo {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+#desafio-contenido {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    color: white;
+}
+
+/* Zona móvil */
+#zona-movil {
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%; /* Ajustar ancho */
+    max-width: 600px;
+    border: 2px solid #fff;
+}
+
+/* Indicador del centro */
+#centro-indicador {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #ff4500;
+    z-index: 1;
+}
+
+/* Objetivo (la bola) */
+#objetivo {
+    width: 30px;
+    height: 30px;
+    background-color: #28a745;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    animation: mover 0.5s linear infinite;
+    will-change: left;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Animación de la bola */
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Botón */
+.btn-primary {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-primary:active {
+    transform: scale(1);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+.ocul
+{
+    display: none;
+}
